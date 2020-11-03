@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/SomtochiAma/ctci-algorithms/strings"
+	"github.com/SomtochiAma/ctci-algorithms/data-structures/stringbuilder"
 )
 
 func main() {
-	fmt.Println(strings.ReverseString("maker"))
+	s := stringbuilder.NewSB()
+	s.Append("me and ")
+	s.Append("you")
+	fmt.Println(s.String())
 }
